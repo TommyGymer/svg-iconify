@@ -2,6 +2,12 @@
 name = "svg-iconify"
 version = "0.1.0"
 edition = "2021"
+license-file="LICENSE"
+repository="https://github.com/TommyGymer/svg-inconify/"
+keywords = ["svg", "png", "cli", "tools"]
+categories = ["command-line-utilities"]
+readme = "README.md"
+description = "A CLI for converting SVG's to PNG of specified size"
 
 [dependencies]
 clap = { version = "4.5.15", features = ["derive"] }
