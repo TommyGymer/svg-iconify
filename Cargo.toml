@@ -1,0 +1,9 @@
+[package]
+name = "icon-installer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.15", features = ["derive"] }
+color-eyre = "0.6.3"
+resvg = "0.43.0"
