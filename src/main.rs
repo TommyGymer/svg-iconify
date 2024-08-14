@@ -8,11 +8,13 @@ use clap::Parser;
 #[derive(Parser)]
 struct Cli {
     /// The path to the SVG icon source file
-    path: std::path::PathBuf,
+    src_path: std::path::PathBuf,
     /// The output width
     width: u32,
     /// The output height
     height: u32,
+    /// The path to place the PNG
+    dest_path: std::path::PathBuf,
 }
 
 fn main() -> Result<()> {
@@ -21,7 +23,7 @@ fn main() -> Result<()> {
 
     let size = tiny_skia::IntSize::from_wh(args.width, args.height).expect("Invalid size");
 
-    let mut f = File::open(args.path)?;
+    let mut f = File::open(args.src_path)?;
     let mut data = Vec::new();
     f.read_to_end(&mut data)?;
 
@@ -37,6 +39,6 @@ fn main() -> Result<()> {
     );
 
     resvg::render(&tree, transform, &mut img.as_mut());
-    img.save_png("/home/tom/Pictures/test.png")?;
+    img.save_png(args.dest_path)?;
     Ok(())
 }
