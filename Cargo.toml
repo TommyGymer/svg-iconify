@@ -8,6 +8,7 @@ keywords = ["svg", "png", "cli", "tools"]
 categories = ["command-line-utilities"]
 readme = "README.md"
 description = "A CLI for converting SVG's to PNG of specified size"
+exclude = []
 
 [dependencies]
 clap = { version = "4.5.15", features = ["derive"] }
