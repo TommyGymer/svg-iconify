@@ -1,4 +1,5 @@
 # SVG Iconify
+[![Rust](https://github.com/TommyGymer/svg-inconify/actions/workflows/rust.yml/badge.svg)](https://github.com/TommyGymer/svg-inconify/actions/workflows/rust.yml)
 A CLI for converting SVG's to PNG of specified size
 
 ## Uses
