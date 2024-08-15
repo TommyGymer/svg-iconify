@@ -8,6 +8,11 @@ A CLI for converting SVG's to PNG of specified size
 cargo install svg-iconify
 ```
 
+## Usage
+```bash
+svg-iconify /home/tom/Pictures/icon.svg 64 64 /home/tom/Pictures/icon-64x64.png
+```
+
 ## Dependencies
 - [resvg](https://crates.io/crates/resvg) for image handling
 - [color-eyre](https://crates.io/crates/color-eyre) for result handling
