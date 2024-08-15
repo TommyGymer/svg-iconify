@@ -1,14 +1,11 @@
 # SVG Iconify
 [![Rust][action-badge]][action-url]
 [![Crates.io][crates-badge]][crates-url]
-[![Documentation][docs-badge]][docs-url]
 
 [action-badge]: https://github.com/TommyGymer/svg-inconify/actions/workflows/rust.yml/badge.svg
 [action-url]: https://github.com/TommyGymer/svg-inconify/actions/workflows/rust.yml
 [crates-badge]: https://img.shields.io/crates/v/svg-iconify.svg
 [crates-url]: https://crates.io/crates/svg-iconify
-[docs-badge]: https://docs.rs/svg-iconify/badge.svg
-[docs-url]: https://docs.rs/svg-iconify
 
 A CLI for converting SVG's to PNG of specified size
 
